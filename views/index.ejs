@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>welcome page</title>
+
+      <%- include("./_share/stylesheets.ejs") %>
+
+    </head>
+    <body >
+
+      <%- include("./_share/stylesheets.ejs")%>
+      <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+    <div class="container">
+      <span class="skiplink-text">Skip to main content</span>
+    </div>
+  </a>
+  
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <a class="navbar-brand" href="#">ナビゲーションバー</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+          <a class="nav-link" href="#">ホーム <span class="sr-only">（現在位置）</span></a>
+        </li>
+        <li class="nav-item">
+          <!-- <a class="nav-link" href="#">Link</a> -->
+          <a class="nav-link" href="#">リンク</a>
+        </li>
+        <li class="nav-item">
+          <!-- <a class="nav-link disabled" href="#">Disabled</a> -->
+          <a class="nav-link disabled" href="#">無効</a>
+        </li>
+        <li class="nav-item dropdown">
+          <!-- <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a> -->
+          <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ドロップダウン</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <!-- <a class="dropdown-item" href="#">Action</a> -->
+            <a class="dropdown-item" href="#">アクション</a>
+            <!-- <a class="dropdown-item" href="#">Another action</a> -->
+            <a class="dropdown-item" href="#">その他のアクション</a>
+            <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+            <a class="dropdown-item" href="#">その他</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"> -->
+        <input class="form-control mr-sm-2" type="text" placeholder="検索" aria-label="Search">
+        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">検索</button>
+      </form>
+    </div>
+  </nav>
+  
+  <main role="main" class="container">
+  
+    <div class="starter-template">
+      <!-- <h1>Bootstrap starter template</h1> -->
+      <h1>Bootstrap スターターテンプレート</h1>
+      <!-- <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p> -->
+      <p class="lead">このドキュメントを使ってあらゆるプロジェクトを高速にスタートしましょう．<br> このテキストと基礎となる HTML ドキュメントが手に入ります.</p>
+    </div>
+  
+  </main><!-- /.container -->
+
+    <script src="/public/development/third_party/jquery.js"></script>
+    <script src="/public/development/third_party/popper.js"></script>
+    <script src="/public/development/third_party/bootstrap.js"></script>
+  </body>
+</html>
