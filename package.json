@@ -17,6 +17,17 @@
   },
   "homepage": "https://github.com/kazuto0291/weblog#readme",
   "devDependencies": {
-    "eslint": "^4.19.1"
+    "del": "^3.0.0",
+    "eslint": "^4.19.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "require-dir": "^1.2.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   }
 }
