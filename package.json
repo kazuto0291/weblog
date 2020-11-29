@@ -4,6 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "gulp": "gulp",
+    "build-dev": "set NODE_ENV=development && gulp",
+    "build-prod": "set NODE_ENV=production && gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,7 +22,7 @@
   "devDependencies": {
     "del": "^3.0.0",
     "eslint": "^4.19.1",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
     "require-dir": "^1.2.0"

@@ -32,6 +32,9 @@ module.exports = {
         ],
         "no-console":[
             "off"
-        ]
+        ],
+        "parserOptions": {
+            "ecomaVersion": 2017
+        }
     }
 };
