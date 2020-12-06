@@ -1,3 +1,6 @@
-const logger = require("./lib/log/logger.js").console;
+const systemlogger = require("./lib/log/systemlogger.js");
 
-logger.info("start");
+
+
+
+app.use(systemlogger());
