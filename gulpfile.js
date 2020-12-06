@@ -10,7 +10,8 @@ development = series(
   tasks["clean-log"],
   tasks["copy-images"],
   tasks["copy-javascripts"],
-  tasks["copy-third_party"]
+  tasks["copy-third_party"],
+  tasks["compile-sass"]
 );
 
 
@@ -18,7 +19,8 @@ production = series(
   tasks["clean-log"],
   tasks["copy-images"],
   tasks["copy-javascripts"],
-  tasks["copy-third_party"]
+  tasks["copy-third_party"],
+  tasks["compile-sass"]
 );
 
 module.exports = {
