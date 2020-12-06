@@ -1,1 +1,3 @@
-console.log(process.env.NODE_ENV);
+const logger = require("./lib/log/logger.js").console;
+
+logger.info("start");
