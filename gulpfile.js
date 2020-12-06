@@ -11,7 +11,7 @@ development = series(
   tasks["copy-images"],
   tasks["copy-javascripts"],
   tasks["copy-third_party"],
-  tasks["compile-sass"],
+  tasks["compile-sass"]
 );
 
 
