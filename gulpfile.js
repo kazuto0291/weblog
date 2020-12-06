@@ -1,9 +1,21 @@
-const gulp = require("gulp");
-const load = require("require-dir");
+const config = require("./gulp/config.js");
+const { series, parallel } = require("gulp");
+const load =require("require-dir");
+let tasks, development, production;
 
-load("./gulp/tasks", { recurse: true });
+tasks = load("./gulp/tasks", {recurse: true });
 
-gulp.task("default", () => {
-  console.log("hello");
-  console.log(process.env.NODE_ENV);
-});
+development = series(
+  tasks["clean-log"]
+);
+
+
+production = series(
+  tasks["clean-log"]
+);
+
+module.exports = {
+  development,
+  production,
+  default: config.env.IS_DEVELOPMENT ? development : production
+};

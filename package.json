@@ -20,10 +20,10 @@
   },
   "homepage": "https://github.com/kazuto0291/weblog#readme",
   "devDependencies": {
-    "del": "^3.0.0",
+    "del": "^4.1.1",
     "eslint": "^4.19.1",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0",
+    "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
     "require-dir": "^1.2.0"
   },
