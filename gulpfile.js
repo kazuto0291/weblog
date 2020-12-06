@@ -4,14 +4,17 @@ const load =require("require-dir");
 let tasks, development, production;
 
 tasks = load("./gulp/tasks", {recurse: true });
+// recurseファルダ内にファルダが入れ子でも読み込んでくれる
 
 development = series(
-  tasks["clean-log"]
+  tasks["clean-log"],
+  tasks["copy-images"]
 );
 
 
 production = series(
-  tasks["clean-log"]
+  tasks["clean-log"],
+  tasks["copy-images"]
 );
 
 module.exports = {
