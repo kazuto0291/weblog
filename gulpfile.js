@@ -9,14 +9,16 @@ tasks = load("./gulp/tasks", {recurse: true });
 development = series(
   tasks["clean-log"],
   tasks["copy-images"],
-  tasks["copy-javascripts"]
+  tasks["copy-javascripts"],
+  tasks["copy-third_party"]
 );
 
 
 production = series(
   tasks["clean-log"],
   tasks["copy-images"],
-  tasks["copy-javascripts"]
+  tasks["copy-javascripts"],
+  tasks["copy-third_party"]
 );
 
 module.exports = {
