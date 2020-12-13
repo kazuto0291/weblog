@@ -3,3 +3,7 @@ bootstrap*
 font-awesome*
 jquery*
 popper*
+.vscode
+
+package.json
+package-lock

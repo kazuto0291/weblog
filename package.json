@@ -4,6 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "gulp": "gulp",
+    "build-dev": "export NODE_ENV=development && gulp",
+    "build-prod": "export NODE_ENV=production && gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,10 +20,10 @@
   },
   "homepage": "https://github.com/kazuto0291/weblog#readme",
   "devDependencies": {
-    "del": "^3.0.0",
+    "del": "^4.1.1",
     "eslint": "^4.19.1",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0",
+    "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
     "require-dir": "^1.2.0"
   },

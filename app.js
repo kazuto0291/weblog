@@ -10,5 +10,5 @@ app.use("/public", express.static(__dirname + "/public"));
 app.use("/", require("./routes/index.js"));
 
 
-app.listen(3001);
+app.listen(3000);
 
