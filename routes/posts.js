@@ -8,7 +8,9 @@ router.get("/*",(req, res) => {
     db.collection("posts").findOne({
       url: req.url
     }).then((doc) => {
-      res.render("./posts/index.ejs", doc);
+      res.render("./posts/index.ejs", doc, (err, response) => {
+        console.log(response, doc);
+      });
     }).catch((error) => {
       throw error;
     }).then(()=> {
